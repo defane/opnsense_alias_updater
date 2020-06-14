@@ -1,0 +1,10 @@
+firewalls:
+  - name: opnsense
+    key: <KEY_ID>
+    base_url: https://opnsense.local/api
+networks:
+  - name: main
+    description: Main network
+    alias_type: network
+    content:
+      - 192.168.0.0/24

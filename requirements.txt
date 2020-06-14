@@ -1,0 +1,6 @@
+requests
+keyring
+click
+PyYAML
+tqdm
+git+https://github.com/defane/pyopnsense@master#egg=pyopnsense
