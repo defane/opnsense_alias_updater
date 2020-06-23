@@ -3,4 +3,5 @@ keyring
 click
 PyYAML
 tqdm
+networkx
 git+https://github.com/defane/pyopnsense@master#egg=pyopnsense
