@@ -139,3 +139,5 @@ cython_debug/
 
 # Custo project
 networks.yml
+Pipfile
+Pipfile.lock
