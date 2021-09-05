@@ -1,6 +1,8 @@
 import yaml
+from pyopnsense import client
 
-service_name = "opnsense_alias_updater"
+client.DEFAULT_TIMEOUT = 60
+
 with open("keys.yml", 'r') as stream:
     try:
         keys = yaml.safe_load(stream)
