@@ -2,6 +2,7 @@ import yaml
 from pyopnsense import client
 
 client.DEFAULT_TIMEOUT = 60
+service_name = "opnsense_alias_updater"
 
 with open("keys.yml", 'r') as stream:
     try:
@@ -17,7 +18,7 @@ class FirewallBase(object):
         res = list(filter(lambda x: x['name'] == config['name'], keys['keys']))
 
         if len(res) != 1:
-            raise ValueError("unknown firwarall %s" % config['name'])
+            raise ValueError("Unknown firewall %s" % config['name'])
 
         res = res[0]
 
