@@ -4,18 +4,23 @@ In a virtualenv: `pip install -r requirements.txt`
 
 # Configuration
 
+
+
+## Configuration file
+
+1. Copy example:
+
+```
+cp networks.example.yml networks.yml
+cp keys.example.yml keys.yml
+```
+
+2. Update different entries
+
 ## API access
 
 1. With OPNsense UI, create dedicated account with access to alias section and add a key.
-2. Add private key in keyring: `keyring set opnsense_alias_updater <KEY_ID>`
-
-## Networks.yml file
-
-1. Copy example: 
-```cp networks.example.yml networks.yml
-cp keys.example.yml keys.yml
-```
-2. Update different entries
+2. Add keys in `keys.yml`
 
 # Usage
 
