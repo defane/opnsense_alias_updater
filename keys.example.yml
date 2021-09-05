@@ -1,0 +1,4 @@
+keys:
+  - name: opnsense
+    key: <KEY_ID>
+    secret: <SECRET>

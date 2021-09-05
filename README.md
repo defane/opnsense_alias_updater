@@ -11,7 +11,10 @@ In a virtualenv: `pip install -r requirements.txt`
 
 ## Networks.yml file
 
-1. Copy example: `cp networks.example.yml networks.yml`
+1. Copy example: 
+```cp networks.example.yml networks.yml
+cp keys.example.yml keys.yml
+```
 2. Update different entries
 
 # Usage

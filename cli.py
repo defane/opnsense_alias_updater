@@ -22,7 +22,7 @@ def push():
         fw.apply()
         click.echo('Aliases applied on %s' % fw_config["name"])
 
-    for shaper in network_file.data["shaper"]:
+    for shaper in network_file.data.get("shaper", list()):
         firewall_configs = list(
             filter(lambda fw: fw['name'] == shaper["target"], network_file.data["firewalls"])
         )
